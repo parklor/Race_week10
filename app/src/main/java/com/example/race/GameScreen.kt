@@ -1,6 +1,5 @@
 package com.example.race
 
-
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
 import androidx.compose.foundation.gestures.detectDragGestures
@@ -17,8 +16,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import kotlin.toString
-
 
 @Composable
 fun GameScreen(message: String, gameViewModel: GameViewModel) {
@@ -39,7 +36,6 @@ fun GameScreen(message: String, gameViewModel: GameViewModel) {
             horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.Top
         ) {
-            // ========== 作業要求：Text文字會顯示自己姓名 & 再由GameScreen顯示該分數 ==========
             Text(
                 text = "姓名: $myName | 分數: $currentScore",
                 fontSize = 18.sp,
